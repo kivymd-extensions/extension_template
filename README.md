@@ -22,7 +22,7 @@ See source files.
 
 ## Examples
 
-```batch
+```bash
 git clone https://github.com/kivymd-extensions/extension_template.git
 cd extension_template
 cd examples/full_example
