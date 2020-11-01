@@ -30,7 +30,10 @@ if __name__ == "__main__":
         name=package_name,
         description="Example extension that adds beautiful button",
         version=get_version(),
-        packages=find_packages(include=[package_name, package_name + ".*"]),
+        packages=(
+            ["kivymd_extensions"]
+            + find_packages(include=[package_name, package_name + ".*"])
+        ),
         package_data={package_name: []},
         extras_require={
             "dev": [
